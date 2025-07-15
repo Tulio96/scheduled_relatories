@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "meta-ml"
+version = "0.1.0"
+description = ""
+authors = ["Tulio"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.3.1"
+scikit-learn = "^1.7.0"
+openpyxl = "^3.1.5"
+sqlalchemy = "^2.0.41"
+dotenv = "^0.9.9"
+pyodbc = "^5.2.0"
+xgboost = "^3.0.2"
+numpy = "^2.3.1"
+matplotlib = "^3.10.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
