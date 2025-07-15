@@ -1,0 +1,942 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.103.4.245:8501
+  External URL: http://177.67.90.42:8501
+
+2025-07-09 09:26:29.626 Session with id 97237be2-d086-478e-840c-4e7f4289a6fa is already connected! Connecting to a new session.
+2025-07-09 11:42:21.431 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-09 14:31:20.318 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-09 15:23:28.072 Session with id 77fa5eee-66a5-44fa-9979-811e148d61bb is already connected! Connecting to a new session.
+2025-07-09 15:24:02.050 Session with id 77fa5eee-66a5-44fa-9979-811e148d61bb is already connected! Connecting to a new session.
+2025-07-10 08:08:34.613 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/navigation/page.py", line 300, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/pages/2_Unidades_e_Supervisores.py", line 78, in <module>
+    index=unidades.index(st.session_state["unidade_selecionada"]),
+          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'ALEX FELIPE CIRILO' is not in list
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-10 11:41:37.452 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-10 13:49:34.346 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:90: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-11 12:58:08.492 Session with id f14ad966-5edd-4d9e-a975-0d1d59e20cc8 is already connected! Connecting to a new session.
+2025-07-11 14:07:46.073 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-11 15:46:16.029 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-14 08:10:40.339 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-14 11:08:50.897 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-14 14:13:28.860 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+2025-07-14 15:35:45.051 MediaFileHandler: Missing file 94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/bootstrap.py", line 348, in run
+    if asyncio.get_running_loop().is_running():
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 140, in get_file
+    return self._files_by_id[file_id]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/web/server/media_file_handler.py", line 95, in validate_absolute_path
+    self._storage.get_file(absolute_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/memory_media_file_storage.py", line 142, in get_file
+    raise MediaFileStorageError(
+        f"Bad filename '{filename}'. (No media file with id '{file_id}')"
+    ) from e
+streamlit.runtime.media_file_storage.MediaFileStorageError: Bad filename '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0.png'. (No media file with id '94f565ce01b675f7f57f0f41fcb11d2a83af7e5757db15240d6689d0')
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-15 07:25:54.644 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/navigation/page.py", line 300, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/pages/2_Unidades_e_Supervisores.py", line 78, in <module>
+    index=unidades.index(st.session_state["unidade_selecionada"]),
+          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'EDUARDO NUNES MOURA' is not in list
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-15 07:30:39.205 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/navigation/page.py", line 300, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/pages/2_Unidades_e_Supervisores.py", line 78, in <module>
+    index=unidades.index(st.session_state["unidade_selecionada"]),
+          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'EDUARDO NUNES MOURA' is not in list
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:112: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:116: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_unidades.py:120: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+2025-07-15 07:37:35.125 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 128, in exec_func_with_error_handling
+    result = func()
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 667, in code_to_exec
+    _mpa_v1(self._main_script_path)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 165, in _mpa_v1
+    page.run()
+    ~~~~~~~~^^
+  File "/home/global/.cache/pypoetry/virtualenvs/dashboards-b2b-WrBYJIuF-py3.13/lib/python3.13/site-packages/streamlit/navigation/page.py", line 300, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/pages/2_Unidades_e_Supervisores.py", line 78, in <module>
+    index=unidades.index(st.session_state["unidade_selecionada"]),
+          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'EDUARDO NUNES MOURA' is not in list
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:93: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
+/home/global/MIS/B2B_Global/01.Producao/hora_hora/Dashboards_B2B/processing/data_processing_grandes.py:96: RuntimeWarning:
+
+invalid value encountered in scalar divide
+
