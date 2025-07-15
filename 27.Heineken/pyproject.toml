@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "27-heineken"
+version = "0.1.0"
+description = ""
+authors = ["Tulio"]
+readme = "README.md"
+packages = [{include = "27"}]
+
+[tool.poetry.dependencies]
+python = ">=3.13,<3.14"
+pandas = "^2.3.1"
+pyodbc = "^5.2.0"
+dotenv = "^0.9.9"
+python-dotenv = "^1.1.1"
+sqlalchemy = "^2.0.41"
+openpyxl = "^3.1.5"
+requests = "^2.32.4"
+mime = "^0.1.0"
+xlsxwriter = "^3.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

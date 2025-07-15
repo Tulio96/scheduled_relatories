@@ -1,0 +1,9 @@
+DB_SERVER: 10.103.5.11\gcreadonly
+DB_DATABASE: jCobranca_RO
+Consulta executada e resultados salvos em: /mnt/Rede/MIS/B2B - Global/02 - Ogochi/Base_Ativa_Ogochi_2025-06-24.xlsx
+Mensagem de notificação enviada para o Google Chat.
+Base Ativa Ogochi - Finalizado. Status: SUCESSO.
+Caminho construído para Envio_emails: /home/global/MIS/B2B_Global/Relatorios_Agendados/02.Ogochi/Base_ativa/../../Envio_emails
+Anexo 'Base_ativa_Ogochi_2025-06-24.xlsx' adicionado.
+E-mail enviado com sucesso para mis@somosglobal.com.br (CC: daniela.souza@somosglobal.com.br, wellington.prado@somosglobal.com.br, mis@somosglobal.com.br)
+
